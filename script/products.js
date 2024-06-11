@@ -101,7 +101,7 @@ function displayProducts(args) {
                 <h5 class="card-title">${product.name}</h5>
                 <p class="card-text">${product.detail}</p>
                 <p class="card-text productsCost">${product.amount}</p>
-                <a class="btn btn-secondary" id="cart" onclick='addToCart(${JSON.stringify(product)})'>Add To Cart</a>
+                <a class="btn btn-secondary" id="addCart" onclick='addToCart(${JSON.stringify(product)})'>Add To Cart</a>
                 </div>
                 </div>
                 </div>
