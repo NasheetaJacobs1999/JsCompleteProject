@@ -1,0 +1,20 @@
+/* Product Page */
+.card-body{
+    width: 250px;
+    height: 180px;
+  }
+  .card{
+    height: fit-content;
+    width: fit-content;
+    padding: 20px 10px;
+    margin-top: 15px;
+    box-shadow: 0 0 10px 0 #000;
+  }
+  #product h2{
+    font-weight: 400;
+    font-size: 60px;
+    padding-bottom: 30px;
+  }
+  #product{
+    background-color: rgb(193, 193, 193);
+  }
