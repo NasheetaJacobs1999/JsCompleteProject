@@ -1,7 +1,7 @@
 /* Product Page */
 .card-body{
     width: 250px;
-    height: 180px;
+    height: fit-content;
   }
   .card{
     height: fit-content;
@@ -9,6 +9,7 @@
     padding: 20px 10px;
     margin-top: 15px;
     box-shadow: 0 0 10px 0 #000;
+    background-color: rgb(245, 203, 210);
   }
   #product h2{
     font-weight: 400;
@@ -16,5 +17,27 @@
     padding-bottom: 30px;
   }
   #product{
-    background-color: rgb(193, 193, 193);
+    background-color: pink;
+    height: 150vh;
   }
+
+  /* Admin Page */
+#admin{
+    background-color: pink;
+}
+#admin h2{
+    font-weight: 400;
+    font-size: 60px;
+    padding-bottom: 30px;
+}
+
+/* Checkout Page */
+#checkout{
+    background-color: pink;
+    height: 100vh;
+}
+#checkout h2{
+    font-weight: 400;
+    font-size: 60px;
+    padding-bottom: 30px;
+}
