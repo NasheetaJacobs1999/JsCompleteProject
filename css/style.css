@@ -6,37 +6,10 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    background-color: pink;
+}
 /* Landing Page */
-#landingMain{
-    height: 90vh;
-}
-    #nashHome{
-    content: "";
-    background-image: url('https://nasheetajacobs1999.github.io/allimages/images/princesses.jpeg') ;
-    background-repeat: no-repeat;
-    background-size: contain;
-    }
-    #landingMain{
-        padding-top: 150px;
-    }
-.nashCard{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    width: 20em;
-    height: 27em;
-    padding: 2em;
-    border-radius: 2em;
-    background-image: linear-gradient(180deg, rgba(255, 255, 255, 0),  rgba(255, 255, 255, 0.652));
-
-}
-
-footer{
-    background-color: black;
-    height: 10vh;
-}
-
 
 /* Product Page */
 .card-body{
@@ -45,7 +18,7 @@ footer{
   }
   .card{
     height: fit-content;
-    width: fit-content;
+    width: 280px;
     padding: 20px 10px;
     margin-top: 15px;
     box-shadow: 0 0 10px 0 #000;
@@ -57,8 +30,9 @@ footer{
     padding-bottom: 30px;
   }
   #product{
+    margin-top: 120px;
     background-color: pink;
-    height: 150vh;
+    height: 135vh;
   }
   .form-control{
     width: 300px;
@@ -66,6 +40,18 @@ footer{
   .col{
     display: flex;
     align-items: center;
+  }
+  #addCart{
+    background-color: rgb(243, 168, 181);
+    color: #000;
+  }
+  .cart{
+    background-color: rgb(243, 168, 181);
+    color: #000;
+  }
+  .sort{
+    background-color: rgb(243, 168, 181);
+    color: #000;
   }
 
   /* Admin Page */
@@ -76,6 +62,39 @@ footer{
     font-weight: 400;
     font-size: 60px;
     padding-bottom: 30px;
+}
+.addNew{
+    background-color: rgb(243, 168, 181);
+    color: #000;
+}
+.table-responsive {
+    padding: 0 20px; 
+}
+
+.table-responsive table {
+    margin: 0 auto; 
+    width: 80%; 
+}
+
+.table-responsive td, .table-responsive th {
+    padding: 10px;
+}
+
+.table-bordered {
+    border: 1px solid #ddd;
+}
+
+.table-bordered th {
+    background-color: #f2f2f2;
+    text-align: left;
+}
+
+/* .table-bordered tr:nth-child(even) {
+    background-color: #f9f9f9;
+} */
+
+.table-bordered tr:hover {
+    background-color: #ddd;
 }
 
 /* Checkout Page */
@@ -122,5 +141,5 @@ footer{
 }
 
 .navbar-brand{
-    width: 80px;
+    width: 60px;
 }
