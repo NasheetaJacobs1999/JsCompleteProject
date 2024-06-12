@@ -100,7 +100,7 @@ function displayProducts(args) {
                 <div class="card-body">
                 <h5 class="card-title">${product.name}</h5>
                 <p class="card-text">${product.detail}</p>
-                <p class="card-text productsCost">${product.amount}</p>
+                <p class="card-text productsCost">R${product.amount}</p>
                 <a class="btn btn-secondary" id="addCart" onclick='addToCart(${JSON.stringify(product)})'>Add To Cart</a>
                 </div>
                 </div>

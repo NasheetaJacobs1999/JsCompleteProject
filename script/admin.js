@@ -22,8 +22,8 @@ function adminContent(args){
                 <td> 
                 <div>
                     <div class="buttons">
-                    <button class="btn edit " data-bs-toggle="modal" data-bs-target="#updateProduct${product.id}"><i class="fa-solid fa-pencil"></i></button>
-                    <button class="btn edit " onclick="deleteProduct(${JSON.stringify(i)})"><i class="fa-solid fa-trash"></i></button>
+                    <button class="btn edit btn-secondary " data-bs-toggle="modal" data-bs-target="#updateProduct${product.id}"><i class="fa-solid fa-pencil"></i></button>
+                    <button class="btn btn-secondary edit " onclick="deleteProduct(${JSON.stringify(i)})"><i class="fa-solid fa-trash"></i></button>
                     </div>
                     <div class="modal fade" id="updateProduct${product.id}" tabindex="-1" aria-labelledby="updateProduct${product.id}" aria-hidden="true">
                         <div class="modal-dialog">

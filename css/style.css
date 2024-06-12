@@ -9,12 +9,23 @@
 body{
     background-color: pink;
 }
+.nav-link{
+    color: #000;
+}
+.nav-link:hover{
+    
+    color: #f1f1f1;
+}
 /* Landing Page */
 
 /* Product Page */
 .card-body{
     width: 250px;
     height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
   }
   .card{
     height: fit-content;
@@ -93,6 +104,13 @@ body{
     background-color: #ddd;
 }
 
+.edit{
+    background-color: rgb(243, 168, 181);
+}
+.edit:hover{
+    background-color: red;
+}
+
 /* Checkout Page */
 #checkout{
     background-color: pink;
@@ -144,18 +162,12 @@ body{
     gap: 10px;
 }
 .fa-solid{
-    color: #f1f1f1;
-}
-.edit{
-    background-color: rgb(243, 168, 181);
-}
-.edit:hover{
-    background-color: red;
+    color: #000;
 }
 
 /* Contact Page */
 .container-fluid4{
-    background-size: cover;
+    /*  */
     background-position: center;
     color: white;
     display: flex;
@@ -163,14 +175,15 @@ body{
     flex-direction: column;
 }
 .contact {
-    background-color: transparent;
+    background-color: rgb(245, 203, 210);
     color: black;
-    width: 70%;
-    left: 25%;
+    width: 840px;
+    align-items: center;
 }
 .contact .heading-text {
-    background-color: pink;
+    background-color: rgb(249, 190, 200);
 }
+
 .submit,
 .reset {
   color: white;
@@ -180,6 +193,10 @@ body{
   --bg: #000;
   transition: 0.2s;
 }
+.form-control{
+    width:800px ;
+}
+
 .submit:hover,
 .reset:hover {
   transform: translate(-0.25rem, -0.25rem);
