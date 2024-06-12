@@ -17,6 +17,76 @@ body{
     color: #f1f1f1;
 }
 /* Landing Page */
+.rowHome1{
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+    text-align: center;
+    margin-left: 515px;
+}
+.rowHome2{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    height: fit-content;
+}
+#card1{
+    width: 250px;
+    height: 200px;
+    box-shadow: 3px 3px 3px 3px gray;
+    background-image: url("https://i.postimg.cc/ncq0QtdK/download-2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    
+}
+#card2{
+    width: 250px;
+    height: 200px;
+    box-shadow: 3px 3px 3px 3px gray;
+    background-image: url("https://nasheetajacobs1999.github.io/allimages/images/home-page.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    
+}
+#card3{
+    width: 250px;
+    height: 200px;
+    box-shadow: 3px 3px 3px 3px gray;
+    background-image: url("https://i.postimg.cc/fLgm93Nq/download-1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+.colHome{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-decoration: none;
+}
+.landing1{
+    font-weight: 600;
+    font-size: 70px;
+    padding-top: 60px;
+    margin-top: 100px;
+}
+.landing2{
+    font-weight: 600;
+    font-size: 100px;
+    padding-bottom: 60px;
+}
+#Home{
+    background-image: url(https://nasheetajacobs1999.github.io/allimages/images/Disney-Princesses.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: contain;
+    background-position: bottom;
+}
 
 /* Product Page */
 .card-body{
@@ -89,6 +159,7 @@ body{
 
 .table-responsive td, .table-responsive th {
     padding: 10px;
+    text-align: center;
 }
 
 .table-bordered {
