@@ -18,7 +18,7 @@ body{
   }
   .card{
     height: fit-content;
-    width: 280px;
+    width: 270px;
     padding: 20px 10px;
     margin-top: 15px;
     box-shadow: 0 0 10px 0 #000;
@@ -89,10 +89,6 @@ body{
     text-align: left;
 }
 
-/* .table-bordered tr:nth-child(even) {
-    background-color: #f9f9f9;
-} */
-
 .table-bordered tr:hover {
     background-color: #ddd;
 }
@@ -111,7 +107,7 @@ body{
 /* About Page */
 #aboutPage {
     position: relative;
-   height: 100vh;
+    height: 100vh;
 }
  #aboutPage {
     content: "";
@@ -142,4 +138,53 @@ body{
 
 .navbar-brand{
     width: 60px;
+}
+.buttons{
+    display: flex;
+    gap: 10px;
+}
+.fa-solid{
+    color: #f1f1f1;
+}
+.edit{
+    background-color: rgb(243, 168, 181);
+}
+.edit:hover{
+    background-color: red;
+}
+
+/* Contact Page */
+.container-fluid4{
+    background-size: cover;
+    background-position: center;
+    color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.contact {
+    background-color: transparent;
+    color: black;
+    width: 70%;
+    left: 25%;
+}
+.contact .heading-text {
+    background-color: pink;
+}
+.submit,
+.reset {
+  color: white;
+  border: 2px solid white;
+  margin-left: 5px;
+  margin-right: 5px;
+  --bg: #000;
+  transition: 0.2s;
+}
+.submit:hover,
+.reset:hover {
+  transform: translate(-0.25rem, -0.25rem);
+  box-shadow: 0.25rem 0.25rem var(--bg);
+  background: pink!important;
+  color: white !important;
+  border: 2px solid white;
 }

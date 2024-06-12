@@ -20,7 +20,7 @@
 
 
       <!-- Navbar -->
-      <nav class="navbar navbar-dark bg-dark fixed-top gradient-custom">
+      <nav class="navbar navbar-dark bg-danger-subtle fixed-top gradient-custom">
         <div class="container-fluid justify-content-between">
             <img class="navbar-brand" src="https://nasheetajacobs1999.github.io/allimages/images/Logo.png" alt="Logo"/>
     
@@ -50,25 +50,38 @@
             </div>
         </nav>
     </nav>
+    <main class="container-fluid4">
+      <div class="row">
+        <h2 class="display-2">
+          Contact Us
+        </h2>
+      </div>
+      <div class="card m-2 p-3 contact">
+        <form action="https://formspree.io/f/mrgnjjvw" method="POST">
+        <h1 class="card p-3 text-center heading-text">Contact Us</h1>
+        <div class="mb-3">
+            <label class="form-label"> Full Name: * </label>
+            <input type="text" class="form-control border-2" name="Name" placeholder="Your Full Name" required />
+        </div>
+        <div class="mb-3">
+            <label class="form-label"> Email: * </label>
+            <input type="email" class="form-control border-2" name="Email" placeholder="Valid Email Address" required />
+        </div>
+        <div class="mb-3">
+            <label class="form-label"> Contact Number: * </label>
+            <input type="tel" class="form-control border-2" name="Contact" placeholder="Mobile / Telephone Number" required/>
+        </div>
+        <div class="mb-3">
+            <label class="form-label"> Leave Us a Message: </label>
+            <textarea name="message" class="form-control border-2" rows="5" placeholder="Let us know how we can help and we'll get back to you soon!"></textarea>
+        </div>
+        <p class="p-2">* indicates a required field</p>
+        <button type="submit" class="btn btn-outline-danger text-center">Submit</button>
+        <button type="reset" class="btn btn-outline-danger text-center">Reset</button>
+    </form>
+</div>
+    </main>
 
-<main id="contact" class="container-fluid">
-    <div class="rowContact">
-      <div class="colContact">
-          <form class="contactForm" action="https://formspree.io/f/maygaowg" target="_blank" method="post">
-            <input type="text" class="input-field" placeholder="Your Name"><br>
-            <input type="email" class="input-field" placeholder="Your Email Address"><br>
-            <textarea type="text" class="input-field-textarea-field" placeholder="Your Message"></textarea><br>
-            <button class="btn btn-secondary m-3" type="submit">Send Message</button>
-          </form>
-      </div>
-      <div class="colContact">    
-        <h2>Keep in Touch With Us:</h2>
-        <p>Conatct number:+27 65 999 4123</p>
-        <p>Email: zubairmoeratofficial@gmail.com</p>
-        <h2 class="text-center">Where to find Us:</h2>
-        <p class="contactContent text-center">Fitness Fusion, 314 Imam Haron Road, Lansdowne, Cape Town, 7780</p>
-      </div>
-  </main>
     
     <footer class="container-fluid">
       <div class="row">
