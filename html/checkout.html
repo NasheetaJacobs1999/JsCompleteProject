@@ -19,7 +19,7 @@
   <body>
 
     <!-- Navbar -->
-    <nav class="navbar navbar-dark bg-dark fixed-top gradient-custom">
+    <nav class="navbar navbar-dark bg-danger-subtle fixed-top gradient-custom">
         <div class="container-fluid justify-content-between">
             <img class="navbar-brand" src="https://nasheetajacobs1999.github.io/allimages/images/Logo.png" alt="Logo"/>
     
@@ -64,6 +64,12 @@
               </thead>
               <tbody class="table-group-divider" table-checkout></tbody>
               <tfoot class="table-group-divider">
+                <tr id="totalsRow">
+                  <th scope="row">Total</th>
+                  <td id="totalQuantity">0</td>
+                  <td></td> <!-- Empty cell for Price column-->
+                  <td id="totalAmount">R0.00</td>
+                </tr>
               </tfoot>
             </table>
           </div>
