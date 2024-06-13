@@ -1,8 +1,8 @@
-//adding and removing objects
-//footer year
+//adding and removing items
+//Function for Footer Year
 document.querySelector('#currYear').textContent = new Date().getFullYear()
 
-//gettting products from the localStorage to display in table
+//This fetches the products from the localStorage to display in table
 let cart = JSON.parse(localStorage.getItem('checkout'));
 let checkoutTable = document.querySelector('[table-checkout]')
 let sum2 = 0
@@ -26,20 +26,20 @@ function cartItems(){
 }
 cartItems()
 
-//this function is to clear the products in my table and is linked to onclick
+//This function is to clear the products in the table
 function clearProducts(){
     location.reload()
     localStorage.removeItem('checkout')
     alert('Press "OK" to remove items from your cart')
 }
-//this function is for product payment and clear products on my table
+//Function for product payment and clear products on the table
 function productPayment(){
     location.reload()
     localStorage.removeItem('checkout')
     alert('Payment Successful')
 }
 
-// This function is to total up the cart
+//Function is to total up the cart
 let totalAmnt = document.querySelector('#totalAmount')
 let sum1 = 0
 
@@ -50,7 +50,7 @@ let sum1 = 0
     }
     totalAmnt.innerHTML = `R${sum1}`
 
-// This function is to total up the quantity
+//Function to total up the quantity
 let totalQuant = document.querySelector('#totalQuantity')
 
     totalQuant.innerHTML = `${sum2}`
