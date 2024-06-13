@@ -7,7 +7,7 @@
     box-sizing: border-box;
 }
 body{
-    background-color: pink;
+    background-color: #fff;
 }
 .nav-link{
     color: #000;
@@ -17,75 +17,23 @@ body{
     color: #f1f1f1;
 }
 /* Landing Page */
-.rowHome1{
-    display: inline-block;
-    justify-content: center;
-    align-items: center;
-    height: fit-content;
+.container-fluid1 {
+    min-height: 89.8vh;
+    display: grid;
+    place-items: center;
+    background-image: url(https://nasheetajacobs1999.github.io/allimages/images/bgHome.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.HomeHeader {
+    margin-top: 70px;
     text-align: center;
-    margin-left: 515px;
-}
-.rowHome2{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-wrap: wrap;
-    height: fit-content;
-}
-#card1{
-    width: 250px;
-    height: 200px;
-    box-shadow: 3px 3px 3px 3px gray;
-    background-image: url("https://i.postimg.cc/ncq0QtdK/download-2.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    color: white;
-    
-}
-#card2{
-    width: 250px;
-    height: 200px;
-    box-shadow: 3px 3px 3px 3px gray;
-    background-image: url("https://nasheetajacobs1999.github.io/allimages/images/home-page.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    color: white;
-    
-}
-#card3{
-    width: 250px;
-    height: 200px;
-    box-shadow: 3px 3px 3px 3px gray;
-    background-image: url("https://i.postimg.cc/fLgm93Nq/download-1.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    color: white;
-}
-.colHome{
-    padding-top: 20px;
-    padding-bottom: 20px;
-    text-decoration: none;
-}
-.landing1{
-    font-weight: 600;
-    font-size: 70px;
-    padding-top: 60px;
-    margin-top: 100px;
-}
-.landing2{
-    font-weight: 600;
-    font-size: 100px;
-    padding-bottom: 60px;
-}
-#Home{
-    background-image: url(https://nasheetajacobs1999.github.io/allimages/images/Disney-Princesses.jpg);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: contain;
-    background-position: bottom;
+    font-family: 'Walt Disney Font', sans-serif;
+    color: black;
+    font-size: 3em;
+    padding: 10px;
+    margin-bottom: 10px;
 }
 
 /* Product Page */
@@ -95,7 +43,7 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* align-items: center; */
+    align-items: center;
   }
   .card{
     height: fit-content;
@@ -103,7 +51,7 @@ body{
     padding: 20px 10px;
     margin-top: 15px;
     box-shadow: 0 0 10px 0 #000;
-    background-color: rgb(245, 203, 210);
+    background-color: rgb(243, 168, 181);
   }
   #product h2{
     font-weight: 400;
@@ -112,7 +60,7 @@ body{
   }
   #product{
     margin-top: 120px;
-    background-color: pink;
+    background-color: #fff;
     height: 135vh;
   }
   .form-control{
@@ -123,21 +71,22 @@ body{
     align-items: center;
   }
   #addCart{
-    background-color: rgb(243, 168, 181);
+    background-color: #d27cd1;
     color: #000;
   }
   .cart{
-    background-color: rgb(243, 168, 181);
+    background-color: #d27cd1;
     color: #000;
   }
   .sort{
-    background-color: rgb(243, 168, 181);
+    background-color: #d27cd1;
     color: #000;
   }
 
   /* Admin Page */
 #admin{
-    background-color: pink;
+    background-color: #fff;
+    
 }
 #admin h2{
     font-weight: 400;
@@ -145,7 +94,7 @@ body{
     padding-bottom: 30px;
 }
 .addNew{
-    background-color: rgb(243, 168, 181);
+    background-color: #d27cd1;
     color: #000;
 }
 .table-responsive {
@@ -160,6 +109,7 @@ body{
 .table-responsive td, .table-responsive th {
     padding: 10px;
     text-align: center;
+    color: #000;
 }
 
 .table-bordered {
@@ -176,21 +126,27 @@ body{
 }
 
 .edit{
-    background-color: rgb(243, 168, 181);
+    background-color: #d27cd1;
 }
 .edit:hover{
-    background-color: red;
+    background-color: pink;
 }
 
 /* Checkout Page */
 #checkout{
-    background-color: pink;
+    background-color: #fff;
     height: 100vh;
 }
 #checkout h2{
     font-weight: 400;
     font-size: 60px;
     padding-bottom: 30px;
+}
+#clear{
+    background-color: #d27cd1;
+}
+#pay{
+    background-color: #d27cd1;
 }
 
 /* About Page */
@@ -206,11 +162,6 @@ body{
     background-size: contain;
     background-color: rgb(254, 69, 195);
     background-position: bottom;
-    border-image: fill 0 linear-gradient( #d836a26c,rgb(0, 0, 0));
-    &>*{
-        color: #f1f1f1;
-    }
-  
 }
  #aboutPage .about-p, #aboutPage h2 {
     position: relative;
@@ -238,7 +189,6 @@ body{
 
 /* Contact Page */
 .container-fluid4{
-    /*  */
     background-position: center;
     color: white;
     display: flex;
@@ -246,13 +196,13 @@ body{
     flex-direction: column;
 }
 .contact {
-    background-color: rgb(245, 203, 210);
+    background-color: rgb(243, 168, 181);
     color: black;
     width: 840px;
     align-items: center;
 }
 .contact .heading-text {
-    background-color: rgb(249, 190, 200);
+    background-color: #e8a4e7;
 }
 
 .submit,
@@ -272,7 +222,37 @@ body{
 .reset:hover {
   transform: translate(-0.25rem, -0.25rem);
   box-shadow: 0.25rem 0.25rem var(--bg);
-  background: pink!important;
+  background: #e8a4e7!important;
   color: white !important;
   border: 2px solid white;
 }
+#addCart:hover, #clear:hover, #pay:hover {
+    background-color: pink;
+}
+.table-responsive tr {
+    color: #fff;
+}
+
+.table-responsive tr:hover {
+    color: #000;
+}
+
+#titles{
+    color: #000;
+}
+footer{
+    color: #fff;
+    background-color: #693668;
+}
+.view{
+    background-color: red ;
+}
+
+  .navbar-dark {
+    background-color: #693668 !important;
+  }
+
+  .nav-link:hover {
+    color: #d27cd1 !important;
+    transition: color 0.2s ease-in-out;
+  }

@@ -1,4 +1,4 @@
-//Footer Year Function
+//Function for Foor Year
 document.querySelector('#currYear').textContent = new Date().getFullYear();
 
 //Product Wrapper
@@ -86,7 +86,7 @@ let products = localStorage.getItem('products') ?
             amount: 160
         }
     ]))
-//this puts products/objects in html
+//The following puts products in html
 let productWrapper = document.querySelector('[data-products]');
 function displayProducts(args) {
     productWrapper.innerHTML = " "
@@ -123,7 +123,7 @@ function displayProducts(args) {
 
 displayProducts(products);
 
-//searches products by name
+//Searches products by name
 let productSearch = document.querySelector('[data-search-product]');
 productSearch.addEventListener('input', () => {
     try {
@@ -136,7 +136,7 @@ productSearch.addEventListener('input', () => {
     }
 })
 
-//sorts by the price
+//Sorts products by the price
 let productSort = document.querySelector('.btn')
 let highest = false;
 productSort.addEventListener('click', () => {
@@ -154,7 +154,7 @@ productSort.addEventListener('click', () => {
     }
 });
 
-//puts objects in new localStorage for other page
+//Puts objects in new localStorage for other page
 let cart = JSON.parse(localStorage.getItem('checkout')) || [];
 function addToCart(product) {
     debugger

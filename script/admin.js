@@ -1,6 +1,6 @@
-//footer year
+//Function for Footer Year
 document.querySelector('#currYear').textContent = new Date().getFullYear()
-//variables
+//defining variables
 let tableContent = document.querySelector('[table-products]')
 
 let products = JSON.parse(localStorage.getItem('products')) || []
@@ -8,7 +8,7 @@ document.querySelector('[admin-add-product]')
 
 let sortedProducts = document.getElementById('adminSortProduct')
 
-// Displays products in admin table
+//Displays products in admin table
 function adminContent(args){
     try{
         tableContent.innerHTML = ""
@@ -21,7 +21,7 @@ function adminContent(args){
                 <td>R${product.amount}</td>
                 <td> 
                 <div>
-                    <div class="buttons">
+                    <div class="btns">
                     <button class="btn edit btn-secondary " data-bs-toggle="modal" data-bs-target="#updateProduct${product.id}"><i class="fa-solid fa-pencil"></i></button>
                     <button class="btn btn-secondary edit " onclick="deleteProduct(${JSON.stringify(i)})"><i class="fa-solid fa-trash"></i></button>
                     </div>
@@ -66,7 +66,7 @@ function adminContent(args){
 }
 adminContent(products)
 
-//this is my edit function
+//Function to edit
 function UpdateProduct(item, index){
     try{
         this.id = item.id;
@@ -84,7 +84,7 @@ function UpdateProduct(item, index){
     }
 }
 
-//this deletes my products on the website
+//Function to delete products on the website
 function deleteProduct(index){
     try{
         products.splice(index, 1)
@@ -96,7 +96,7 @@ function deleteProduct(index){
     }
 }
 
-//sorts products from new to old and viceversa
+//Function to sort products from new to old and viceversa
 let highest = false;
 sortedProducts.addEventListener('click', () => {
     try{
@@ -114,7 +114,7 @@ sortedProducts.addEventListener('click', () => {
     }
 });
 
-//lets a new product be added
+//Function to allow a new product to be added
 let adminSavedProduct = document.getElementById('saveProduct')
 adminSavedProduct.addEventListener('click', () => {
     try{
