@@ -19,7 +19,7 @@
   <body>
 
     <!-- Navbar -->
-<nav class="navbar navbar-dark bg-danger-subtle fixed-top gradient-custom">
+<nav class="navbar navbar-dark bg-danger-subtle gradient-custom">
   <div class="container-fluid justify-content-between">
     <img class="navbar-brand" src="https://nasheetajacobs1999.github.io/allimages/images/Princess-Logo.png" alt="Logo"/>
     <ul class="navbar-nav d-flex flex-row">
@@ -44,11 +44,11 @@
     </ul>
   </div>
 </nav>
-    <main class="container-fluid" id="checkout" data-checkout>
-        <h2>Checkout</h2>
+    <main class="container-fluid checkoutHead" id="checkout" data-checkout>
+        <h2 class="header">Checkout</h2>
         <div class="row container-fluid">
-          <div class="col">
-            <table class="table table-bordered table-responsive">
+          <div class="col d-flex justify-content-center flex-column">
+            <table class="table table-bordered table-responsive checkoutTable">
               <thead class="table-group-divider">
                 <tr>
                   <th scope="col">Product</th>
@@ -67,10 +67,12 @@
                 </tr>
               </tfoot>
             </table>
+          <div class="actionBtn">
+            <a class="btn btn-secondary mx-2" id="clear" onclick='clearProducts()'>Clear Items</a>
+            <a class="btn btn-secondary" id="pay" onclick='productPayment()'>Pay Now</a>
+          </div>
           </div>
         </div>
-        <a class="btn btn-secondary" id="clear" onclick='clearProducts()'>Clear Items</a>
-        <a class="btn btn-secondary" id="pay" onclick='productPayment()'>Pay Now</a>
       </main>
       <footer class="container-fluid">
         <div class="row">

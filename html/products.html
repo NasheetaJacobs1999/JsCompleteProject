@@ -19,27 +19,27 @@
   <body>
 
     <!-- Navbar -->
-<nav class="navbar navbar-dark bg-danger-subtle fixed-top gradient-custom">
+<nav class="navbar navbar-dark bg-danger-subtle gradient-custom">
   <div class="container-fluid justify-content-between">
     <img class="navbar-brand" src="https://nasheetajacobs1999.github.io/allimages/images/Princess-Logo.png" alt="Logo"/>
     <ul class="navbar-nav d-flex flex-row">
       <li class="nav-item">
-        <a class="nav-link me-5 text-white" href="../index.html">Home</a>
+        <a class="nav-link me-0 me-sm-5 text-white" href="../index.html">Home</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link me-5 text-white" href="./about.html">About</a>
+        <a class="nav-link me-0 me-sm-5 text-white" href="./about.html">About</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link me-5 text-white" href="./products.html">Products</a>
+        <a class="nav-link me-0 me-sm-5 text-white" href="./products.html">Products</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link me-5 text-white" href="./checkout.html">Checkout</a>
+        <a class="nav-link me-0 me-sm-5 text-white" href="./checkout.html">Checkout</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link me-5 text-white" href="./contact.html">Contact</a>
+        <a class="nav-link me-0 me-sm-5 text-white" href="./contact.html">Contact</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link me-5 text-white" href="./admin.html">Admin</a>
+        <a class="nav-link me-0 me-sm-5 text-white" href="./admin.html">Admin</a>
       </li>
     </ul>
   </div>
@@ -47,13 +47,15 @@
 
 <!-- Main content -->
 <main id="product" class="container-fluid">
-  <div class="row">
-    <div class="col">
-      <input type="text" placeholder="Search" required class="form-control" data-search-product>
+  <div class="row d-flex justify-content-center">
+    <h2 class="header">Our Products</h2>
+    <div class="col d-flex justify-content-center">
+      <input type="text" placeholder="Search" required class="form-control2" data-search-product>
       <button class="btn btn-secondary m-1 sort">Sort by Price</button>
       <a class="btn btn-secondary m-1 cart" href="../html/checkout.html">Cart</a>
     </div>
-    <div class="row" data-products></div>
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 row-cols-xl-5" data-products>
+    </div>
   </div>
 </main>
 

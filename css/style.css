@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+
 *,
 *::before,
 *::after {
@@ -16,9 +18,13 @@ body{
     
     color: #f1f1f1;
 }
+.header{
+    text-align: center;
+}
+
 /* Landing Page */
 .container-fluid1 {
-    min-height: 89.8vh;
+    min-height: 95vh;
     display: grid;
     place-items: center;
     background-image: url(https://nasheetajacobs1999.github.io/allimages/images/bgHome.png);
@@ -27,13 +33,12 @@ body{
 }
 
 .HomeHeader {
-    margin-top: 70px;
     text-align: center;
-    font-family: 'Walt Disney Font', sans-serif;
+    font-family: "Dancing Script", cursive;
     color: black;
-    font-size: 3em;
+    font-size: 7em;
     padding: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 45px;
 }
 
 /* Product Page */
@@ -59,12 +64,15 @@ body{
     padding-bottom: 30px;
   }
   #product{
-    margin-top: 120px;
+    margin-top: 1rem;
     background-color: #fff;
-    height: 135vh;
+    min-height: 135vh;
   }
-  .form-control{
+  .form-control2{
     width: 300px;
+  }
+  .checkoutHead{
+    margin-top: 1rem;
   }
   .col{
     display: flex;
@@ -96,6 +104,9 @@ body{
 .addNew{
     background-color: #d27cd1;
     color: #000;
+}
+.headerText{
+    margin-top: 1rem;
 }
 .table-responsive {
     padding: 0 20px; 
@@ -148,6 +159,14 @@ body{
 #pay{
     background-color: #d27cd1;
 }
+.checkoutTable{
+    width: 80%;
+}
+.actionBtn{
+    display: flex;
+    justify-content: end;
+    width: 80%;
+}
 
 /* About Page */
 #aboutPage {
@@ -156,24 +175,43 @@ body{
 }
  #aboutPage {
     content: "";
-    background-image: url('https://nasheetajacobs1999.github.io/allimages/images/princesses.jpeg') ;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://nasheetajacobs1999.github.io/allimages/images/princesses.jpeg');
     background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: contain;
-    background-color: rgb(254, 69, 195);
+    /* background-attachment: fixed; */
+    background-size: cover;
+    /* background-color: rgb(254, 69, 195); */
     background-position: bottom;
+    color: whitesmoke;
+
 }
- #aboutPage .about-p, #aboutPage h2 {
-    position: relative;
+ #aboutPage, #aboutPage h2 {
+    /* position: relative; */
     z-index: 2; 
     font-weight: bolder;
     text-align: center;
-    padding-top: 2rem;
-    margin-top:4rem
+    padding-top: 1rem;
+    /* margin-top:4rem */
 }
 .about-main{
-
+    /* width: 70%; */
     text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 2rem;
+}
+.about-p{
+    width: 85%;
+    font-size: 20px;
+    z-index: 2; 
+    /* font-weight: bolder; */
+    text-align: center;
+    padding-top: 2rem;
+    /* margin-top:4rem */
+}
+.about-header{
+    margin-top: 4.3rem;
 }
 
 .navbar-brand{
@@ -203,6 +241,11 @@ body{
 }
 .contact .heading-text {
     background-color: #e8a4e7;
+    text-align: center;
+}
+.contactBlock{
+    display: flex;
+    justify-content: center;
 }
 
 .submit,
@@ -214,7 +257,7 @@ body{
   --bg: #000;
   transition: 0.2s;
 }
-.form-control{
+.form-control1{
     width:800px ;
 }
 

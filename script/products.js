@@ -94,7 +94,7 @@ function displayProducts(args) {
         if (args) {
             args?.forEach((product) => {
                 productWrapper.innerHTML += `
-                <div class="col">
+                <div class="col d-flex justify-content-center">
                 <div class="card">
                 <img src="${product.image}" class="card-img-top h-50 w-50 img-fluid align-self-center" alt="${product.id}">
                 <div class="card-body">
