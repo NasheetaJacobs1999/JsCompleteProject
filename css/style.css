@@ -1,25 +1,38 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
-
 *,
 *::before,
 *::after {
-
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 body{
     background-color: #fff;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
 }
-.nav-link{
-    color: #000;
+footer{
+    color: #fff;
+    background-color: #693668;
 }
-.nav-link:hover{
-    
-    color: #f1f1f1;
+.navbar-dark {
+    background-color: #693668 !important;
+}
+.nav-link:hover {
+    color: #d27cd1 !important;
+    transition: color 0.2s ease-in-out;
 }
 .header{
     text-align: center;
+    font-family: "Dancing Script", cursive;
+}
+
+.fa-facebook{
+    z-index: 10;
+}
+.list-inline{
+    z-index: 10;
+    font-family: none !important;
 }
 
 /* Landing Page */
@@ -30,8 +43,8 @@ body{
     background-image: url(https://nasheetajacobs1999.github.io/allimages/images/bgHome.png);
     background-size: cover;
     background-position: center;
+    justify-content: center;
 }
-
 .HomeHeader {
     text-align: center;
     font-family: "Dancing Script", cursive;
@@ -39,6 +52,83 @@ body{
     font-size: 7em;
     padding: 10px;
     margin-bottom: 45px;
+}
+.view{
+    background-color: #d27cd1;
+}
+.view:hover {
+    background-color: #9c69ab;
+    transition: background-color 0.2s ease-in-out;
+}
+@media screen and (max-width: 768px) {
+    .container-fluid1 {
+        align-items: center;
+    }
+
+    .HomeHeader {
+        font-size: 4em;
+    }
+}
+
+/* About Page */
+#aboutPage {
+    position: relative;
+
+}
+ #aboutPage {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://nasheetajacobs1999.github.io/allimages/images/princesses.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: whitesmoke;
+}
+ #aboutPage, #aboutPage h2 {
+    z-index: 2; 
+    font-weight: bolder;
+    text-align: center;
+    padding-top: 1rem;
+}
+.about-main{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 2rem;
+}
+.about-p{
+    width: 85%;
+    font-size: 20px;
+    z-index: 2; 
+    text-align: center;
+    padding-top: 2rem;
+}
+.about-header{
+    margin-top: 4.3rem;
+}
+.navbar-brand{
+    width: 60px;
+}
+.buttons{
+    display: flex;
+    gap: 10px;
+}
+.fa-solid{
+    color: #000;
+}
+@media screen and (max-width: 992px) {
+    #aboutPage h2 {
+        font-size: 30px;
+    }
+
+    .about-p {
+        width: 95%;
+        font-size: 18px;
+    }
+
+    .about-header {
+        margin-top: 3rem;
+    }
 }
 
 /* Product Page */
@@ -49,98 +139,50 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-  }
-  .card{
+}
+.card{
     height: fit-content;
     width: 270px;
     padding: 20px 10px;
     margin-top: 15px;
     box-shadow: 0 0 10px 0 #000;
     background-color: rgb(243, 168, 181);
-  }
-  #product h2{
+}
+#product h2{
     font-weight: 400;
     font-size: 60px;
     padding-bottom: 30px;
-  }
-  #product{
+}
+#product{
     margin-top: 1rem;
     background-color: #fff;
     min-height: 135vh;
-  }
-  .form-control2{
+}
+.form-control2{
     width: 300px;
-  }
-  .checkoutHead{
+}
+.checkoutHead{
     margin-top: 1rem;
-  }
-  .col{
+}
+.col{
     display: flex;
     align-items: center;
-  }
-  #addCart{
-    background-color: #d27cd1;
-    color: #000;
-  }
-  .cart{
-    background-color: #d27cd1;
-    color: #000;
-  }
-  .sort{
-    background-color: #d27cd1;
-    color: #000;
-  }
-
-  /* Admin Page */
-#admin{
-    background-color: #fff;
-    
 }
-#admin h2{
-    font-weight: 400;
-    font-size: 60px;
-    padding-bottom: 30px;
-}
-.addNew{
+#addCart{
     background-color: #d27cd1;
     color: #000;
 }
-.headerText{
-    margin-top: 1rem;
-}
-.table-responsive {
-    padding: 0 20px; 
-}
-
-.table-responsive table {
-    margin: 0 auto; 
-    width: 80%; 
-}
-
-.table-responsive td, .table-responsive th {
-    padding: 10px;
-    text-align: center;
+.cart{
+    background-color: #d27cd1;
     color: #000;
 }
-
-.table-bordered {
-    border: 1px solid #ddd;
-}
-
-.table-bordered th {
-    background-color: #f2f2f2;
-    text-align: left;
-}
-
-.table-bordered tr:hover {
-    background-color: #ddd;
-}
-
-.edit{
+.sort{
     background-color: #d27cd1;
+    color: #000;
 }
-.edit:hover{
-    background-color: pink;
+.sort:hover,.cart:hover {
+    background-color: #9c69ab;
+    color: #000;
 }
 
 /* Checkout Page */
@@ -155,9 +197,11 @@ body{
 }
 #clear{
     background-color: #d27cd1;
+    color: #000;
 }
 #pay{
     background-color: #d27cd1;
+    color: #000;
 }
 .checkoutTable{
     width: 80%;
@@ -167,62 +211,19 @@ body{
     justify-content: end;
     width: 80%;
 }
+@media screen and (max-width: 992px) {
+    #checkout h2 {
+        font-size: 40px;
+        padding-bottom: 20px;
+    }
 
-/* About Page */
-#aboutPage {
-    position: relative;
-    height: 100vh;
-}
- #aboutPage {
-    content: "";
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://nasheetajacobs1999.github.io/allimages/images/princesses.jpeg');
-    background-repeat: no-repeat;
-    /* background-attachment: fixed; */
-    background-size: cover;
-    /* background-color: rgb(254, 69, 195); */
-    background-position: bottom;
-    color: whitesmoke;
+    .checkoutTable {
+        width: 90%;
+    }
 
-}
- #aboutPage, #aboutPage h2 {
-    /* position: relative; */
-    z-index: 2; 
-    font-weight: bolder;
-    text-align: center;
-    padding-top: 1rem;
-    /* margin-top:4rem */
-}
-.about-main{
-    /* width: 70%; */
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    padding-bottom: 2rem;
-}
-.about-p{
-    width: 85%;
-    font-size: 20px;
-    z-index: 2; 
-    /* font-weight: bolder; */
-    text-align: center;
-    padding-top: 2rem;
-    /* margin-top:4rem */
-}
-.about-header{
-    margin-top: 4.3rem;
-}
-
-.navbar-brand{
-    width: 60px;
-}
-.buttons{
-    display: flex;
-    gap: 10px;
-}
-.fa-solid{
-    color: #000;
+    .actionBtn {
+        width: 90%;
+    }
 }
 
 /* Contact Page */
@@ -240,14 +241,13 @@ body{
     align-items: center;
 }
 .contact .heading-text {
-    background-color: #e8a4e7;
+    background-color: #d27cd1;
     text-align: center;
 }
 .contactBlock{
     display: flex;
     justify-content: center;
 }
-
 .submit,
 .reset {
   color: white;
@@ -260,7 +260,6 @@ body{
 .form-control1{
     width:800px ;
 }
-
 .submit:hover,
 .reset:hover {
   transform: translate(-0.25rem, -0.25rem);
@@ -269,33 +268,81 @@ body{
   color: white !important;
   border: 2px solid white;
 }
+@media screen and (max-width: 992px) {
+    .container-fluid4 {
+        padding: 0 20px;
+    }
+    
+    .contact {
+        width: auto;
+        padding: 0 20px;
+    }
+    
+    .form-control1 {
+        width: calc(100% - 40px);
+    }
+}
+/* add to cart */
 #addCart:hover, #clear:hover, #pay:hover {
-    background-color: pink;
+    background-color: #9c69ab;
 }
 .table-responsive tr {
     color: #fff;
 }
-
 .table-responsive tr:hover {
     color: #000;
 }
-
 #titles{
     color: #000;
 }
-footer{
-    color: #fff;
-    background-color: #693668;
+
+
+/* Admin Page */
+#admin{
+    background-color: #fff;
 }
-.view{
-    background-color: red ;
+#admin h2{
+    font-weight: 400;
+    font-size: 60px;
+    padding-bottom: 30px;
+}
+.addNew{
+    background-color: #d27cd1;
+    color: #000;
+}
+.addNew:hover {
+    background-color: #9c69ab;
+    color: #000;
+}
+.headerText{
+    margin-top: 1rem;
+}
+.table-responsive {
+    padding: 0 20px; 
 }
 
-  .navbar-dark {
-    background-color: #693668 !important;
-  }
-
-  .nav-link:hover {
-    color: #d27cd1 !important;
-    transition: color 0.2s ease-in-out;
-  }
+.table-responsive table {
+    margin: 0 auto; 
+    width: 80%; 
+}
+.table-responsive td, .table-responsive th {
+    padding: 10px;
+    text-align: center;
+    color: #000;
+}
+.table-bordered {
+    border: 1px solid #ddd;
+}
+.table-bordered th {
+    background-color: #f2f2f2;
+    text-align: left;
+}
+.table-bordered tr:hover {
+    background-color: #ddd;
+}
+.edit{
+    background-color: #d27cd1;
+}
+.edit:hover{
+    background-color: #9c69ab;
+}
